@@ -1,6 +1,6 @@
 package newPack;
 
-public class Five {
+public class Two {
     public void run(){
         System.out.println("five runnning");
 
