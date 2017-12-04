@@ -1,7 +1,7 @@
-package com.company;
+package newPack;
 
 public class Five {
-    void run(){
+    public void run(){
         System.out.println("five runnning");
 
     }
