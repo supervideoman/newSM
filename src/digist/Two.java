@@ -1,4 +1,4 @@
-package newPack;
+package digist;
 
 public class Two {
     public void run(){

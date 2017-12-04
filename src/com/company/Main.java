@@ -1,6 +1,6 @@
 package com.company;
 
-import newPack.*;
+import digist.*;
 
 public class Main {
 
