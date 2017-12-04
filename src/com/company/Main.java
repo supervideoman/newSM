@@ -9,5 +9,6 @@ public class Main {
         new Five().run();
         new One();
         new BestSegaMegaDriveClass(1 + 2);
+        MySecondClass my = new MySecondClass();
     }
 }
