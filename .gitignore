@@ -1,6 +1,10 @@
 # Idea files
 /.idea/
+<<<<<<< HEAD
 *.iml
+=======
+
+>>>>>>> master
 
 # Compiled class file
 /out/
