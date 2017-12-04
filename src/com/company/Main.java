@@ -11,5 +11,6 @@ public class Main {
         new One();
         new BestSegaMegaDriveClass(1 + 2);
         MySecondClass my = new MySecondClass();
+        System.out.println("End!");
     }
 }
