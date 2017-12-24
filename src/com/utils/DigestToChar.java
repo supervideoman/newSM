@@ -4,6 +4,7 @@ public class DigestToChar {
     public static String make(int digest){
         String result = "";
         StringBuilder str = new StringBuilder("");
+
         int systemDigets = 26;
         while(digest !=0 || digest>systemDigets) {
             if(digest% systemDigets == 0) {
