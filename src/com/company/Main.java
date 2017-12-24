@@ -8,7 +8,6 @@ public class Main {
         for(int i = 0; i<800; i++)
         {
             System.out.println(i + " = " + DigestToChar.make(i));
-
         }
     }
 }
