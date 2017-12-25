@@ -17,6 +17,7 @@ public class DigestToChar {
         result = str.reverse().toString();
         return result;
     }
+
     public static String makeFrom0(int digest) {
         digest++; // Для использования в ООП, где нумерация столбцов начинается с 0, в excel нумерация с 1
         String result;
