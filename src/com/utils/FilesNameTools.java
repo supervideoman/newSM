@@ -2,9 +2,12 @@ package com.utils;
 
 public class FilesNameTools {
     public static String getLastName(String path){
-        String result = "";
+        StringBuilder result = new StringBuilder();
+        result.append(path);
 
-        return result;
+        System.out.println(result.reverse().indexOf("."));
+
+        return result.toString();
 
     }
 }
