@@ -8,6 +8,6 @@ public class Main {
             System.out.println(i + " = " + DigestToChar.makeFrom0(i));
         }
         //FilenameUtils.getExtension("/path/to/file/foo.txt"); /
-        FilesNameTools.getLastName("123.4.5r.fi");
+        System.out.println(FilesNameTools.getFileExtension("\\fs\\123.4.5r.fi\\fsfs.txt"));
     }
 }

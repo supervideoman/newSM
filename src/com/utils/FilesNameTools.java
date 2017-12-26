@@ -1,13 +1,11 @@
 package com.utils;
 
 public class FilesNameTools {
-    public static String getLastName(String path){
-        StringBuilder result = new StringBuilder();
-        result.append(path);
-
-        System.out.println(result.reverse().indexOf("."));
-
-        return result.toString();
-
+    public static String getFileExtension(String path) {
+        StringBuilder preResult = new StringBuilder();
+        preResult.append(path);
+        // Имя полное(путь) без расширения
+        //System.out.println(preResult.substring(0,preResult.lastIndexOf(".") + 1));
+        return preResult.substring(preResult.lastIndexOf(".") + 1);
     }
 }
