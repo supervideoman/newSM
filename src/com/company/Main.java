@@ -1,11 +1,13 @@
 package com.company;
 import com.utils.*;
 
+import java.util.Date;
+
 
 public class Main {
     public static void main(String[] args)
     {
-        StringBuilder[] testString = new StringBuilder[100000];
+        StringBuilder[] testString = new StringBuilder[10];
         for(int i = 0; i < testString.length; i++)
         {
             testString[i] = new StringBuilder("");
@@ -27,11 +29,14 @@ public class Main {
             //System.out.println(testString[i]);
         }
         long start = System.currentTimeMillis();
-        for(int i = 0; i < testString.length; i++) FilesNameTools.getFileNameAndExtension(testString[i].toString(), "_fuck");
-        System.out.println(System.currentTimeMillis() - start);
+        for(int i = 0; i < testString.length; i++) System.out.println(FilesNameTools.getFileNameAndExtension(testString[i].toString(), "_fuck"));
+        System.out.println("---" + (System.currentTimeMillis() - start) + "---");
         start = System.currentTimeMillis();
-        for(int i = 0; i < testString.length; i++) FilesNameTools.getFileExtension(testString[i].toString(), "_fuck");
-        System.out.println(System.currentTimeMillis() - start);
+        for(int i = 0; i < testString.length; i++) System.out.println(FilesNameTools.getFileExtension(testString[i].toString(), "_fuck"));
+        System.out.println("---" + (System.currentTimeMillis() - start) + "---");
+        start = System.currentTimeMillis();
+        for(int i = 0; i < testString.length; i++) System.out.println(FilesNameTools.addNameFile(testString[i].toString(), "_fuck"));
+        System.out.println("---" + (System.currentTimeMillis() - start) + "---");
     }
     private static int getRandom(int a, int b)
     {

@@ -20,4 +20,13 @@ public class FilesNameTools {
         if(timeStr.length == 1) preResult.append(timeStr[0] + add);
         return preResult.toString();
     }
+    public static String addNameFile(String path, String addedName){
+        StringBuilder preResult = new StringBuilder();
+        preResult.append(path);
+
+        int tmp = (preResult.lastIndexOf(".")==-1) ? preResult.length():preResult.lastIndexOf(".");
+        //System.out.println(tmp);
+        preResult.insert(tmp, addedName);
+        return preResult.toString();
+    }
 }
