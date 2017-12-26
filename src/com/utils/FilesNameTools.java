@@ -23,9 +23,8 @@ public class FilesNameTools {
     public static String addNameFile(String path, String addedName){
         StringBuilder preResult = new StringBuilder();
         preResult.append(path);
-
-        int tmp = (preResult.lastIndexOf(".")==-1) ? preResult.length():preResult.lastIndexOf(".");
-        //System.out.println(tmp);
+        int end = preResult.lastIndexOf(".");
+        int tmp = (end == -1) ? preResult.length():end;
         preResult.insert(tmp, addedName);
         return preResult.toString();
     }
