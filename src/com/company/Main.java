@@ -4,7 +4,7 @@ import com.utils.*;
 public class Main {
     public static void main(String[] args)
     {
-        StringBuilder[] testString = new StringBuilder[10000]; // Массив с тестовыми путями
+        StringBuilder[] testString = new StringBuilder[200_0_000]; // Массив с тестовыми путями
         for(int i = 0; i < testString.length; i++)
         {
             testString[i] = new StringBuilder(""); // Случайный путь
@@ -25,13 +25,16 @@ public class Main {
             }
         }
         long start = System.currentTimeMillis();
-        for(int i = 0; i < testString.length; i++) FilesNameTools.getFileNameAndExtension(testString[i].toString(), "_fuck");
+        for(int i = 0; i < testString.length; i++)
+            FilesNameTools.getFileNameAndExtension(testString[i].toString(), "_fuck");
         System.out.println("---" + (System.currentTimeMillis() - start) + "---");
         start = System.currentTimeMillis();
-        for(int i = 0; i < testString.length; i++) FilesNameTools.getFileExtension(testString[i].toString(), "_fuck");
+        for(int i = 0; i < testString.length; i++)
+            FilesNameTools.getFileExtension(testString[i].toString(), "_fuck");
         System.out.println("---" + (System.currentTimeMillis() - start) + "---");
         start = System.currentTimeMillis();
-        for(int i = 0; i < testString.length; i++) FilesNameTools.addNameFile(testString[i].toString(), "_fuck");
+        for(int i = 0; i < testString.length; i++)
+            FilesNameTools.addNameFile(testString[i].toString(), "_fuck");
         System.out.println("---" + (System.currentTimeMillis() - start) + "---");
     }
     private static int getRandom(int a, int b)
